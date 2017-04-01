@@ -1,7 +1,8 @@
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import singleton.UserSingleton;
 import org.junit.Test;
+import singletonPattern.SingletonPattern;
+
 import static org.junit.Assert.assertEquals;
 /**
  * Created by Jean-Paul D on 2017-04-01.
@@ -10,7 +11,7 @@ public class SingletonTest {
 
     @Test
     public void testSingleton(){
-        UserSingleton user = UserSingleton.getInstance();
+        SingletonPattern user = SingletonPattern.getInstance();
 
         user.userNameSurname("Jean-Paul", "De Buys");
 
